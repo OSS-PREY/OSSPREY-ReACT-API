@@ -1,6 +1,6 @@
 # ReACT Extractor
 
-For hosting ReACTs (actionables/suggestions) for OSPEX projects
+For hosting ReACTs (actionables/suggestions) for OSSPREY projects
 
 ## Installation
 
