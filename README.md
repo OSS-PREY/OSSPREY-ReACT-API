@@ -7,6 +7,6 @@ For hosting ReACTs (actionables/suggestions) for OSSPREY projects
 Clone the repository and install in editable mode:
 
 ```bash
-git clone <repo_url>
+git clone https://github.com/OSS-PREY/OSSPREY-ReACT-API
 cd react-extractor
 pip install -e .
