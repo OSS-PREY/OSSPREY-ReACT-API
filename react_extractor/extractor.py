@@ -1,6 +1,7 @@
 import json
 import argparse
 import pandas as pd
+import random
 
 def filter_json_by_features(data, features):
     """
@@ -37,6 +38,17 @@ def calculate_feature_differences(df, month_n, feature_list):
     negative_or_zero_features = [feature for feature, diff in differences.items() if diff <= 0]
     return negative_or_zero_features
 
+def randomize_json(data):
+    """
+    Randomizes the order of the JSON objects in the list; and return the first 10 to the caller function.
+    This is a placeholder function and can be replaced with actual randomization logic if needed.
+    """
+    random.seed(43)
+    random.shuffle(data)
+    return sorted(data[:10], key=lambda x: x.get("Importance", 0), reverse=True)
+
+
+
 def ReACT_Extractor(original_data, feature_data: pd.DataFrame, month_n: int, write_output: bool = True) -> dict:
     """
     Generates a child JSON by:
@@ -57,14 +69,17 @@ def ReACT_Extractor(original_data, feature_data: pd.DataFrame, month_n: int, wri
     ]
     processed_features = calculate_feature_differences(feature_data, month_n, feature_list)
     filtered_json = filter_json_by_features(original_data, processed_features)
-    sorted_json = sorted(filtered_json, key=lambda x: x.get("Importance", 0), reverse=True)
+    filtered_json = randomize_json(filtered_json)
+
+    # sorted_json = 
+    print(f"Filtered JSON length: {len(filtered_json)}")
 
     if write_output:
         with open("output/extracted_react.json", 'w') as json_file:
-            json.dump(sorted_json, json_file, indent=4)
+            json.dump(filtered_json, json_file, indent=4)
         print("ReACTs saved in `extracted_react.json` file.")
 
-    return sorted_json
+    return filtered_json
 
 def main():
     parser = argparse.ArgumentParser(

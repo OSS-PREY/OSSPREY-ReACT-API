@@ -1,0 +1,167 @@
+[
+    {
+        "ReACT-ID": "ReACT-36",
+        "ReACT_title": "Maintain a small number of core/active developers.",
+        "Entity_responsible": "Project Maintainers, Technical Leads, Community Managers, Project Maintainers, Technical Leads, Community Managers, Project Maintainers, Technical Leads, Community Managers",
+        "Features": "st_num_dev, st_num_dev, st_num_dev, t_num_dev_nodes, s_num_nodes, s_net_overlap, s_net_overlap",
+        "References": 3,
+        "articles": [
+            {
+                "title": "Inequalities in open source software development: Analysis of contributor\u2019s commits in apache software foundation projects",
+                "doi": "https://doi.org/10.1371/journal.pone.0152976"
+            },
+            {
+                "title": "Why we engage in FLOSS: answers from core developers",
+                "doi": "https://doi.org/10.1145/3195836.3195848"
+            },
+            {
+                "title": "Turnover in Open-Source Projects: The Case of Core Developers",
+                "doi": "https://dl.acm.org/doi/10.1145/3422392.3422433"
+            }
+        ],
+        "Importance": 7
+    },
+    {
+        "ReACT-ID": "ReACT-25",
+        "ReACT_title": "Maintain concise, updated, accessible documentation.",
+        "Entity_responsible": "Project Maintainers, Documentation Team, Contributors, Project Maintainers, Documentation Team, Contributors",
+        "Features": "t_num_dev_nodes, t_num_dev_per_file, t_graph_density, st_num_dev, t_num_dev_nodes, t_net_overlap",
+        "References": 1,
+        "articles": [
+            {
+                "title": "Difficulties of Newcomers Joining Software Projects Already in Execution",
+                "doi": "https://doi.org/10.1109/CSCI.2017.171"
+            },
+            {
+                "title": "Newcomers\u2019 Barriers. . . Is That All? An Analysis of Mentors\u2019 and Newcomers\u2019 Barriers in OSS Projects",
+                "doi": "https://doi.org/10.1007/s10606-018-9310-8"
+            },
+            {
+                "title": "Why we engage in FLOSS: answers from core developers",
+                "doi": "https://doi.org/10.1145/3195836.3195848"
+            }
+        ],
+        "Importance": 6
+    },
+    {
+        "ReACT-ID": "ReACT-31",
+        "ReACT_title": "Offer coding guidelines.",
+        "Entity_responsible": "Developers, Technical Leads, Project Maintainers",
+        "Features": "st_num_dev, t_num_dev_nodes, t_net_overlap",
+        "References": 1,
+        "articles": [
+            {
+                "title": "Why we engage in FLOSS: answers from core developers",
+                "details": "In Proceedings of the 11th International Workshop on Cooperative and Human Aspects of Software Engineering (CHASE '18). Association for Computing Machinery, New York, NY, USA, 114\u2013121.",
+                "doi": "https://doi.org/10.1145/3195836.3195848"
+            }
+        ],
+        "Importance": 3
+    },
+    {
+        "ReACT-ID": "ReACT-100",
+        "ReACT_title": "Document the processes and practices: Document all design decisions, processes and practices defined and make them easily accessible. Information like code/naming standards, patch submission process, task assignment process, communication practices, design decisions etc. need to be properly documented, helping newcomers in their first contributions. Remember to present the technical and social processes and practices.",
+        "Entity_responsible": "Documentation Team, Project Leaders, Technical Leads\n",
+        "Features": "st_num_dev, t_num_dev_nodes",
+        "References": 2,
+        "articles": [
+            {
+                "title": "Fostering Free/Libre Open Source Software community formation: guidelines for communities to support newcomers\u2019 onboarding",
+                "doi": "https://www.ime.usp.br/~gerosa/papers/fostering-freelibre-open-source-software-community-formation_-guidelines-for-communities-to-support-newcomers-onboarding-wsl-2015.pdf"
+            },
+            {
+                "title": "Let me in: Guidelines for the successful onboarding of newcomers to open source projects",
+                "doi": "https://ieeexplore.ieee.org/document/8254320"
+            }
+        ],
+        "Importance": 2
+    },
+    {
+        "ReACT-ID": "ReACT-86",
+        "ReACT_title": "Acknowledge all contributions of newcomers",
+        "Entity_responsible": "Mentors",
+        "Features": "st_num_dev, t_num_dev_nodes",
+        "References": 1,
+        "articles": [
+            {
+                "title": "Ten simple rules for helping newcomers become contributors to open projects",
+                "doi": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007296"
+            }
+        ],
+        "Importance": 2
+    },
+    {
+        "ReACT-ID": "ReACT-102",
+        "ReACT_title": "Create a live FAQ section. Create FAQ sections to help developers finding answer to recurrent questions. The FAQ must not be a static section; it must be live and grow according to questions and issues recurrently asked or reported. The community can build the FAQ cooperatively, in a wiki-like page, enabling anyone to contribute with entries (question + answer).",
+        "Entity_responsible": "Documentation Team, Collaboration Coordinators, Community Moderators",
+        "Features": "st_num_dev, t_num_dev_nodes",
+        "References": 1,
+        "articles": [
+            {
+                "title": "Fostering Free/Libre Open Source Software community formation: guidelines for communities to support newcomers\u2019 onboarding",
+                "doi": "https://www.ime.usp.br/~gerosa/papers/fostering-freelibre-open-source-software-community-formation_-guidelines-for-communities-to-support-newcomers-onboarding-wsl-2015.pdf"
+            },
+            {
+                "title": "Let me in: Guidelines for the successful onboarding of newcomers to open source projects",
+                "doi": "https://ieeexplore.ieee.org/document/8254320"
+            }
+        ],
+        "Importance": 2
+    },
+    {
+        "ReACT-ID": "ReACT-67",
+        "ReACT_title": "Clearly communicate unresolved issues to the developers",
+        "Entity_responsible": "Project Managers",
+        "Features": "st_num_dev",
+        "References": 1,
+        "articles": [
+            {
+                "title": "Why are Commits Being Reverted?: A Comparative Study of Industrial and Open Source Projects",
+                "doi": "https://doi.org/10.1109/ICSME.2016.83"
+            }
+        ],
+        "Importance": 1
+    },
+    {
+        "ReACT-ID": "ReACT-66",
+        "ReACT_title": "Perform adequate testing before integrating a feature",
+        "Entity_responsible": "Quality Assurance Team",
+        "Features": "st_num_dev",
+        "References": 1,
+        "articles": [
+            {
+                "title": "Why are Commits Being Reverted?: A Comparative Study of Industrial and Open Source Projects",
+                "doi": "https://doi.org/10.1109/ICSME.2016.83"
+            }
+        ],
+        "Importance": 1
+    },
+    {
+        "ReACT-ID": "ReACT-52",
+        "ReACT_title": "Encourage developers to perform Reengineering, Forward Engineering and Corrective Engineering Activities",
+        "Entity_responsible": "Project Leaders",
+        "Features": "st_num_dev",
+        "References": 1,
+        "articles": [
+            {
+                "title": "Inside Commits: An Empirical Study on Commits in Open-Source Software",
+                "doi": "https://doi.org/10.1145/3474624.3474629"
+            }
+        ],
+        "Importance": 1
+    },
+    {
+        "ReACT-ID": "ReACT-61",
+        "ReACT_title": "Make the tasks technically interesting\n",
+        "Entity_responsible": "Project Managers",
+        "Features": "st_num_dev",
+        "References": 1,
+        "articles": [
+            {
+                "title": "Community-based production of open-source software: What do we know about the developers who participate?",
+                "doi": "https://doi.org/10.1016/j.infoecopol.2008.10.001"
+            }
+        ],
+        "Importance": 1
+    }
+]
